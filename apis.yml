@@ -1,7 +1,7 @@
 aid: pinnacle
 url: https://raw.githubusercontent.com/api-search/pinnacle/refs/heads/main/apis.yml
 apis:
-  - aid: pinnacle:pinnacle-customer-api
+  - aid: pinnacle:pinnacle
     name: Pinnacle Customer API
     tags:
       - API
