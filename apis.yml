@@ -37,12 +37,10 @@ apis:
       Pinnacle is an online gaming website that was founded in 1998. Since its
       inception, Pinnacle has become a medium-sized, fully licensed, online
       sportsbook.             
-name: Pinnacle
+name: ' Pinnacle Sports Betting'
 tags:
-  - Consulting
-  - Technology
-  - Training
-  - Processes
+  - Sports Betting
+  - Gambling
 type: Contract
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
@@ -63,3 +61,7 @@ maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
 specificationVersion: '0.19'
+common:
+  - name: GitHub Organization
+    url: https://github.com/pinnacleapi
+    type: GitHubOrganization
