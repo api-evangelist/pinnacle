@@ -13,7 +13,7 @@ apis:
       Pinnacle is an online gaming website that was founded in 1998. Since its
       inception, Pinnacle has become a medium-sized, fully licensed, online
       sportsbook.
-  - aid: pinnacle:pinnacle-customer-api
+  - aid: pinnacle:pinnacle-bets-api
     name: Pinnacle Bets API
     tags:
       - API
@@ -25,7 +25,7 @@ apis:
       Pinnacle is an online gaming website that was founded in 1998. Since its
       inception, Pinnacle has become a medium-sized, fully licensed, online
       sportsbook. 
-  - aid: pinnacle:pinnacle-customer-api
+  - aid: pinnacle:pinnacle-b2b-bets-api
     name: Pinnacle B2B Bets API
     tags:
       - API
@@ -45,8 +45,10 @@ tags:
   - Processes
 type: Contract
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
 created: '2024-11-07T00:00:00.000Z'
 modified: '2025-01-02'
+position: Consuming
 description: >-
   Pinnacle is a company that specializes in providing innovative solutions for
   businesses looking to improve their operations. They offer a wide range of
@@ -61,5 +63,3 @@ maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
 specificationVersion: '0.19'
-position: Consuming
-access: 3rd-Party
