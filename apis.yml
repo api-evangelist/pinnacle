@@ -1,5 +1,6 @@
 aid: pinnacle-sports-betting
-url: https://raw.githubusercontent.com/api-search/pinnacle/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-search/pinnacle/refs/heads/main/apis.yml
 apis:
   - aid: pinnacle:pinnacle-customer-api
     name: Pinnacle Customer API
@@ -11,10 +12,9 @@ apis:
     properties:
       - url: https://pinnacleapi.github.io/
         type: Documentation
-    description: |-
-      Pinnacle is an online gaming website that was founded in 1998. Since its
-      inception, Pinnacle has become a medium-sized, fully licensed, online
-      sportsbook.
+    description: >-
+      Pinnacle is an online gaming website that was founded in 1998. Since its inception,
+      Pinnacle has become a medium-sized, fully licensed, online sportsbook.
   - aid: pinnacle:pinnacle-bets-api
     name: Pinnacle Bets API
     tags:
@@ -24,10 +24,9 @@ apis:
     properties:
       - url: https://pinnacleapi.github.io/
         type: Documentation
-    description: |-
-      Pinnacle is an online gaming website that was founded in 1998. Since its
-      inception, Pinnacle has become a medium-sized, fully licensed, online
-      sportsbook. 
+    description: >-
+      Pinnacle is an online gaming website that was founded in 1998. Since its inception,
+      Pinnacle has become a medium-sized, fully licensed, online sportsbook.
   - aid: pinnacle:pinnacle-lines-api
     name: Pinnacle Lines API
     tags:
@@ -37,10 +36,9 @@ apis:
     properties:
       - url: https://pinnacleapi.github.io/
         type: Documentation
-    description: |-
-      Pinnacle is an online gaming website that was founded in 1998. Since its
-      inception, Pinnacle has become a medium-sized, fully licensed, online
-      sportsbook.             
+    description: >-
+      Pinnacle is an online gaming website that was founded in 1998. Since its inception,
+      Pinnacle has become a medium-sized, fully licensed, online sportsbook.
 name: ' Pinnacle Sports Betting'
 tags:
   - Sports Betting
