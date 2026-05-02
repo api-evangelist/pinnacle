@@ -1,45 +1,74 @@
-# Pinnacle (pinnacle)
-Pinnacle is a company that specializes in providing innovative solutions for businesses looking to improve their operations. They offer a wide range of services, including consulting, technology implementation, and training to help organizations streamline processes, increase efficiency, and achieve their goals. Pinnacle works closely with clients to understand their unique needs and develop customized solutions that align with their objectives. With a team of experienced professionals and a commitment to excellence, Pinnacle is dedicated to helping businesses reach their full potential and succeed in today's competitive marketplace.
+# Pinnacle (pinnacle-sports-betting)
+
+Pinnacle is an online gaming website founded in 1998. Since its inception, Pinnacle has become a medium-sized, fully licensed, online sportsbook.
 
 **URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-search/pinnacle/refs/heads/main/apis.yml)
 
 ## Scope
 
-- **Type:** Contract 
-- **Position:** Consuming 
-- **Access:** 3rd-Party 
+- **Type:** Contract
+- **Position:** Consuming
+- **Access:** 3rd-Party
 
-## Tags:
+## Tags
 
- - Consulting, Technology, Training, Processes
+- Gambling, Sports Betting
 
 ## Timestamps
 
-- **Created:** 2024-11-07 
-- **Modified:** 2025-01-02 
+- **Created:** 2024-11-07
+- **Modified:** 2026-04-28
 
 ## APIs
 
-### Pinnacle
+### Pinnacle Customer API
 
-Pinnacle is an online gaming website that was founded in 1998. Since its
-inception, Pinnacle has become a medium-sized, fully licensed, online
-sportsbook.
+Customer-facing operations for the Pinnacle sportsbook platform.
 
-**Human URL:** [https://pinnacleapi.github.io/](https://pinnacleapi.github.io/)
+**Human URL:** [https://www.pinnacle.com/en/API/](https://www.pinnacle.com/en/API/)
 
+#### Tags
 
-#### Tags:
-
- - API
+- Customers, Gambling, Sports Betting
 
 #### Properties
 
 - [Documentation](https://pinnacleapi.github.io/)
 
+### Pinnacle Bets API
+
+Bet placement and management operations for the Pinnacle sportsbook platform.
+
+**Human URL:** [https://www.pinnacle.com/en/API/](https://www.pinnacle.com/en/API/)
+
+#### Tags
+
+- Gambling, Sports Betting
+
+#### Properties
+
+- [Documentation](https://pinnacleapi.github.io/)
+
+### Pinnacle Lines API
+
+Sports betting lines and odds operations for the Pinnacle sportsbook platform.
+
+**Human URL:** [https://www.pinnacle.com/en/API/](https://www.pinnacle.com/en/API/)
+
+#### Tags
+
+- Gambling, Sports Betting
+
+#### Properties
+
+- [Documentation](https://pinnacleapi.github.io/)
+
+## Common Properties
+
+- [GitHubOrganization](https://github.com/pinnacleapi)
+
 ## Maintainers
 
 **FN:** Kin Lane
 
-**Email:** info@apievangelist.com
-
+**Email:** kin@apievangelist.com
