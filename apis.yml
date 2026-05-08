@@ -9,6 +9,8 @@ apis:
       - Sports Betting
     humanURL: https://www.pinnacle.com/en/API/
     properties:
+      - url: openapi/pinnacle-openapi.yml
+        type: OpenAPI
       - url: https://pinnacleapi.github.io/
         type: Documentation
     description: >-
