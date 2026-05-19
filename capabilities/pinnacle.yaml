@@ -1,0 +1,635 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Pinnacle Lines API
+  description: 'Pinnacle Lines API. 18 operations. Lead operation: Get Cancellation Reasons. Self-contained Naftiko capability
+    covering one Pinnacle business surface.'
+  tags:
+  - Pinnacle
+  - Pinnacle Lines API
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    PINNACLE_API_KEY: PINNACLE_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: pinnacle
+    baseUri: https://api.pinnacle.com
+    description: Pinnacle Lines API business capability. Self-contained, no shared references.
+    resources:
+    - name: v1-cancellationreasons
+      path: /v1/cancellationreasons
+      operations:
+      - name: getcancellationreasons
+        method: GET
+        description: Get Cancellation Reasons
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v1-fixtures
+      path: /v1/fixtures
+      operations:
+      - name: getfixtures
+        method: GET
+        description: Get Fixtures
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v1-fixtures-settled
+      path: /v1/fixtures/settled
+      operations:
+      - name: getsettledfixtures
+        method: GET
+        description: Get Settled Fixtures
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v1-fixtures-special
+      path: /v1/fixtures/special
+      operations:
+      - name: getspecialfixtures
+        method: GET
+        description: Get Special Fixtures
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v1-fixtures-special-settled
+      path: /v1/fixtures/special/settled
+      operations:
+      - name: getsettledspecialfixtures
+        method: GET
+        description: Get Settled Special Fixtures
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v1-inrunning
+      path: /v1/inrunning
+      operations:
+      - name: getinrunning
+        method: GET
+        description: Get In-Running
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v1-line
+      path: /v1/line
+      operations:
+      - name: getstraightline
+        method: GET
+        description: Get Straight Line
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v1-line-special
+      path: /v1/line/special
+      operations:
+      - name: getspecialline
+        method: GET
+        description: Get Special Line
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v1-line-teaser
+      path: /v1/line/teaser
+      operations:
+      - name: getteaserline
+        method: POST
+        description: Get Teaser Line
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: v1-odds-special
+      path: /v1/odds/special
+      operations:
+      - name: getspecialodds
+        method: GET
+        description: Get Special Odds
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v1-odds-teaser
+      path: /v1/odds/teaser
+      operations:
+      - name: getteaserodds
+        method: GET
+        description: Get Teaser Odds
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v1-periods
+      path: /v1/periods
+      operations:
+      - name: getperiods
+        method: GET
+        description: Get Periods
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v1-teaser-groups
+      path: /v1/teaser/groups
+      operations:
+      - name: getteasergroups
+        method: GET
+        description: Get Teaser Groups
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v2-currencies
+      path: /v2/currencies
+      operations:
+      - name: getcurrencies
+        method: GET
+        description: Get Currencies
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v2-leagues
+      path: /v2/leagues
+      operations:
+      - name: getleagues
+        method: GET
+        description: Get Leagues
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v2-line-parlay
+      path: /v2/line/parlay
+      operations:
+      - name: getparlayline
+        method: POST
+        description: Get Parlay Line
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: v2-odds
+      path: /v2/odds
+      operations:
+      - name: getstraightodds
+        method: GET
+        description: Get Straight Odds
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: v2-sports
+      path: /v2/sports
+      operations:
+      - name: getsports
+        method: GET
+        description: Get Sports
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    authentication:
+      type: basic
+      username: '{{env.PINNACLE_USER}}'
+      password: '{{env.PINNACLE_PASS}}'
+  exposes:
+  - type: rest
+    namespace: pinnacle-rest
+    port: 8080
+    description: REST adapter for Pinnacle Lines API. One Spectral-compliant resource per consumed operation, prefixed with
+      /v1.
+    resources:
+    - path: /v1/v1/cancellationreasons
+      name: v1-cancellationreasons
+      description: REST surface for v1-cancellationreasons.
+      operations:
+      - method: GET
+        name: getcancellationreasons
+        description: Get Cancellation Reasons
+        call: pinnacle.getcancellationreasons
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/fixtures
+      name: v1-fixtures
+      description: REST surface for v1-fixtures.
+      operations:
+      - method: GET
+        name: getfixtures
+        description: Get Fixtures
+        call: pinnacle.getfixtures
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/fixtures/settled
+      name: v1-fixtures-settled
+      description: REST surface for v1-fixtures-settled.
+      operations:
+      - method: GET
+        name: getsettledfixtures
+        description: Get Settled Fixtures
+        call: pinnacle.getsettledfixtures
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/fixtures/special
+      name: v1-fixtures-special
+      description: REST surface for v1-fixtures-special.
+      operations:
+      - method: GET
+        name: getspecialfixtures
+        description: Get Special Fixtures
+        call: pinnacle.getspecialfixtures
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/fixtures/special/settled
+      name: v1-fixtures-special-settled
+      description: REST surface for v1-fixtures-special-settled.
+      operations:
+      - method: GET
+        name: getsettledspecialfixtures
+        description: Get Settled Special Fixtures
+        call: pinnacle.getsettledspecialfixtures
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/inrunning
+      name: v1-inrunning
+      description: REST surface for v1-inrunning.
+      operations:
+      - method: GET
+        name: getinrunning
+        description: Get In-Running
+        call: pinnacle.getinrunning
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/line
+      name: v1-line
+      description: REST surface for v1-line.
+      operations:
+      - method: GET
+        name: getstraightline
+        description: Get Straight Line
+        call: pinnacle.getstraightline
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/line/special
+      name: v1-line-special
+      description: REST surface for v1-line-special.
+      operations:
+      - method: GET
+        name: getspecialline
+        description: Get Special Line
+        call: pinnacle.getspecialline
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/line/teaser
+      name: v1-line-teaser
+      description: REST surface for v1-line-teaser.
+      operations:
+      - method: POST
+        name: getteaserline
+        description: Get Teaser Line
+        call: pinnacle.getteaserline
+        with:
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/odds/special
+      name: v1-odds-special
+      description: REST surface for v1-odds-special.
+      operations:
+      - method: GET
+        name: getspecialodds
+        description: Get Special Odds
+        call: pinnacle.getspecialodds
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/odds/teaser
+      name: v1-odds-teaser
+      description: REST surface for v1-odds-teaser.
+      operations:
+      - method: GET
+        name: getteaserodds
+        description: Get Teaser Odds
+        call: pinnacle.getteaserodds
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/periods
+      name: v1-periods
+      description: REST surface for v1-periods.
+      operations:
+      - method: GET
+        name: getperiods
+        description: Get Periods
+        call: pinnacle.getperiods
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/teaser/groups
+      name: v1-teaser-groups
+      description: REST surface for v1-teaser-groups.
+      operations:
+      - method: GET
+        name: getteasergroups
+        description: Get Teaser Groups
+        call: pinnacle.getteasergroups
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v2/currencies
+      name: v2-currencies
+      description: REST surface for v2-currencies.
+      operations:
+      - method: GET
+        name: getcurrencies
+        description: Get Currencies
+        call: pinnacle.getcurrencies
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v2/leagues
+      name: v2-leagues
+      description: REST surface for v2-leagues.
+      operations:
+      - method: GET
+        name: getleagues
+        description: Get Leagues
+        call: pinnacle.getleagues
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v2/line/parlay
+      name: v2-line-parlay
+      description: REST surface for v2-line-parlay.
+      operations:
+      - method: POST
+        name: getparlayline
+        description: Get Parlay Line
+        call: pinnacle.getparlayline
+        with:
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v2/odds
+      name: v2-odds
+      description: REST surface for v2-odds.
+      operations:
+      - method: GET
+        name: getstraightodds
+        description: Get Straight Odds
+        call: pinnacle.getstraightodds
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v2/sports
+      name: v2-sports
+      description: REST surface for v2-sports.
+      operations:
+      - method: GET
+        name: getsports
+        description: Get Sports
+        call: pinnacle.getsports
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: pinnacle-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Pinnacle Lines API. One tool per consumed operation, routed inline through this capability's
+      consumes block.
+    tools:
+    - name: get-cancellation-reasons
+      description: Get Cancellation Reasons
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getcancellationreasons
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-fixtures
+      description: Get Fixtures
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getfixtures
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-settled-fixtures
+      description: Get Settled Fixtures
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getsettledfixtures
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-special-fixtures
+      description: Get Special Fixtures
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getspecialfixtures
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-settled-special-fixtures
+      description: Get Settled Special Fixtures
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getsettledspecialfixtures
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-running
+      description: Get In-Running
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getinrunning
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-straight-line
+      description: Get Straight Line
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getstraightline
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-special-line
+      description: Get Special Line
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getspecialline
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-teaser-line
+      description: Get Teaser Line
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: pinnacle.getteaserline
+      with:
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-special-odds
+      description: Get Special Odds
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getspecialodds
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-teaser-odds
+      description: Get Teaser Odds
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getteaserodds
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-periods
+      description: Get Periods
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getperiods
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-teaser-groups
+      description: Get Teaser Groups
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getteasergroups
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-currencies
+      description: Get Currencies
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getcurrencies
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-leagues
+      description: Get Leagues
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getleagues
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-parlay-line
+      description: Get Parlay Line
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: pinnacle.getparlayline
+      with:
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-straight-odds
+      description: Get Straight Odds
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getstraightodds
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-sports
+      description: Get Sports
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: pinnacle.getsports
+      outputParameters:
+      - type: object
+        mapping: $.
