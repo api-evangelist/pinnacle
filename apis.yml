@@ -37,6 +37,8 @@ apis:
   properties:
   - url: https://pinnacleapi.github.io/
     type: Documentation
+  - url: openapi/pinnacle-asyncapi.yml
+    type: AsyncAPI
   description: Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a medium-sized,
     fully licensed, online sportsbook.
 name: ' Pinnacle Sports Betting'
@@ -47,7 +49,7 @@ kind: contract
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2024-11-07T00:00:00.000Z'
-modified: '2026-05-19'
+modified: '2026-05-30'
 position: Consuming
 description: Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a medium-sized,
   fully licensed, online sportsbook.

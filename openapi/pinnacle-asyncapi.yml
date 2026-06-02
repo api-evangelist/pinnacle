@@ -1,0 +1,385 @@
+asyncapi: 3.0.0
+info:
+  title: Pinnacle Lines API - Long-Poll Surface
+  version: v1
+  description: >-
+    Pinnacle does NOT expose a documented public WebSocket (WSS), Server-Sent
+    Events (SSE), or webhook surface. Real-time-ish odds/fixtures consumption
+    is implemented via HTTP delta polling using a `since` cursor on a handful
+    of REST endpoints: callers issue an initial snapshot request, then loop
+    on the same endpoint passing the `last` value from the previous response
+    back as `since` to receive only incremental changes.
+
+
+    This AsyncAPI document models that long-poll surface as event-style
+    operations over the HTTP binding so the cursored delta pattern can be
+    reasoned about as a near-real-time stream. It does not invent any
+    transport (no WSS/SSE/webhook channels are declared) and only describes
+    the endpoints, parameters, and `last` cursor field that are explicitly
+    documented in the Pinnacle Lines API OpenAPI specification at
+    https://github.com/pinnacleapi/pinnacleapi-documentation
+    (openapi-specification/linesapi-oas.yaml).
+  contact:
+    name: Pinnacle API
+    url: https://github.com/pinnacleapi/pinnacleapi-documentation
+    email: api@pinnacle.com
+  externalDocs:
+    description: Pinnacle API Documentation
+    url: https://pinnacleapi.github.io/
+  tags:
+    - name: LongPoll
+    - name: Fixtures
+    - name: Odds
+
+servers:
+  pinnacle:
+    host: api.pinnacle.com
+    protocol: https
+    description: >-
+      Pinnacle REST host. All long-poll operations are HTTP GET requests
+      protected with HTTP Basic auth, as documented in the Lines API OpenAPI
+      specification.
+    security:
+      - $ref: '#/components/securitySchemes/basicAuth'
+
+channels:
+  fixturesDeltaChannel:
+    address: /v1/fixtures
+    title: Fixtures Long-Poll
+    description: >-
+      Returns all non-settled events for the given sport. When called with a
+      `since` cursor, returns only fixtures that changed since the previous
+      response. Without `since`, responses are intentionally delayed up to 1
+      minute by Pinnacle to encourage delta usage.
+    bindings:
+      http:
+        method: GET
+    messages:
+      fixturesDelta:
+        $ref: '#/components/messages/FixturesDelta'
+
+  specialFixturesDeltaChannel:
+    address: /v1/fixtures/special
+    title: Special Fixtures Long-Poll
+    description: >-
+      Returns all non-settled specials for the given sport. Supports the
+      `since` cursor for delta retrieval; without `since`, responses are
+      delayed up to 1 minute.
+    bindings:
+      http:
+        method: GET
+    messages:
+      specialFixturesDelta:
+        $ref: '#/components/messages/SpecialFixturesDelta'
+
+  settledFixturesDeltaChannel:
+    address: /v1/fixtures/settled
+    title: Settled Fixtures Long-Poll
+    description: >-
+      Returns fixtures settled in the last 24 hours for the given sport.
+      Supports the `since` cursor for delta retrieval.
+    bindings:
+      http:
+        method: GET
+    messages:
+      settledFixturesDelta:
+        $ref: '#/components/messages/SettledFixturesDelta'
+
+  settledSpecialFixturesDeltaChannel:
+    address: /v1/fixtures/special/settled
+    title: Settled Special Fixtures Long-Poll
+    description: >-
+      Returns all specials settled in the last 24 hours for the given sport.
+      Supports the `since` cursor for delta retrieval.
+    bindings:
+      http:
+        method: GET
+    messages:
+      settledSpecialFixturesDelta:
+        $ref: '#/components/messages/SettledSpecialFixturesDelta'
+
+  straightOddsDeltaChannel:
+    address: /v2/odds
+    title: Straight Odds Long-Poll
+    description: >-
+      Returns straight odds for all non-settled events. When called with a
+      `since` cursor, returns ONLY periods that changed since the previous
+      response (periods with no changes are omitted). Without `since`,
+      responses are delayed up to 1 minute by Pinnacle to encourage delta
+      usage.
+    bindings:
+      http:
+        method: GET
+    messages:
+      straightOddsDelta:
+        $ref: '#/components/messages/StraightOddsDelta'
+
+  specialOddsDeltaChannel:
+    address: /v1/odds/special
+    title: Special Odds Long-Poll
+    description: >-
+      Returns odds for specials for all non-settled events. Supports the
+      `since` cursor for delta retrieval; without `since`, responses are
+      delayed up to 1 minute.
+    bindings:
+      http:
+        method: GET
+    messages:
+      specialOddsDelta:
+        $ref: '#/components/messages/SpecialOddsDelta'
+
+operations:
+  receiveFixturesDelta:
+    action: receive
+    channel:
+      $ref: '#/channels/fixturesDeltaChannel'
+    title: Poll Fixtures Delta
+    summary: >-
+      GET /v1/fixtures with sportId (required) and optional since cursor.
+      Persist the response's `last` field and reuse it as the next `since`.
+    bindings:
+      http:
+        method: GET
+    messages:
+      - $ref: '#/channels/fixturesDeltaChannel/messages/fixturesDelta'
+
+  receiveSpecialFixturesDelta:
+    action: receive
+    channel:
+      $ref: '#/channels/specialFixturesDeltaChannel'
+    title: Poll Special Fixtures Delta
+    bindings:
+      http:
+        method: GET
+    messages:
+      - $ref: '#/channels/specialFixturesDeltaChannel/messages/specialFixturesDelta'
+
+  receiveSettledFixturesDelta:
+    action: receive
+    channel:
+      $ref: '#/channels/settledFixturesDeltaChannel'
+    title: Poll Settled Fixtures Delta
+    bindings:
+      http:
+        method: GET
+    messages:
+      - $ref: '#/channels/settledFixturesDeltaChannel/messages/settledFixturesDelta'
+
+  receiveSettledSpecialFixturesDelta:
+    action: receive
+    channel:
+      $ref: '#/channels/settledSpecialFixturesDeltaChannel'
+    title: Poll Settled Special Fixtures Delta
+    bindings:
+      http:
+        method: GET
+    messages:
+      - $ref: '#/channels/settledSpecialFixturesDeltaChannel/messages/settledSpecialFixturesDelta'
+
+  receiveStraightOddsDelta:
+    action: receive
+    channel:
+      $ref: '#/channels/straightOddsDeltaChannel'
+    title: Poll Straight Odds Delta
+    summary: >-
+      GET /v2/odds with sportId (required) and optional since cursor. With
+      since, ONLY changed periods are returned; periods with no changes are
+      omitted from the response.
+    bindings:
+      http:
+        method: GET
+    messages:
+      - $ref: '#/channels/straightOddsDeltaChannel/messages/straightOddsDelta'
+
+  receiveSpecialOddsDelta:
+    action: receive
+    channel:
+      $ref: '#/channels/specialOddsDeltaChannel'
+    title: Poll Special Odds Delta
+    bindings:
+      http:
+        method: GET
+    messages:
+      - $ref: '#/channels/specialOddsDeltaChannel/messages/specialOddsDelta'
+
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: >-
+        Pinnacle uses HTTP Basic authentication. Credentials are issued by
+        Pinnacle on a case-by-case basis under the Fair Use Policy.
+
+  parameters:
+    sportId:
+      description: The sport id to retrieve the fixtures or odds for (required).
+    leagueIds:
+      description: Comma-separated list of league ids to filter by.
+    isLive:
+      description: Set to 1 to retrieve ONLY live events/odds.
+    since:
+      description: >-
+        Long-poll cursor. Use the `last` value from the previous response of
+        the same endpoint. When omitted, the response is intentionally
+        delayed by Pinnacle (up to 1 minute) to encourage delta usage.
+    eventIds:
+      description: Comma-separated list of event ids to filter by.
+    oddsFormat:
+      description: >-
+        Odds format. One of American, Decimal, HongKong, Indonesian, Malay.
+        Default is American.
+    toCurrencyCode:
+      description: 3-letter currency code for returned limits. Default is USD.
+
+  messages:
+    FixturesDelta:
+      name: FixturesDelta
+      title: Fixtures Delta Response
+      summary: >-
+        Snapshot or delta of non-settled fixtures for a sport. Includes a
+        `last` cursor to feed into the next request's `since` parameter.
+      contentType: application/json
+      bindings:
+        http:
+          headers:
+            type: object
+            properties:
+              Content-Type:
+                type: string
+                const: application/json
+      payload:
+        $ref: '#/components/schemas/FixturesResponse'
+
+    SpecialFixturesDelta:
+      name: SpecialFixturesDelta
+      title: Special Fixtures Delta Response
+      contentType: application/json
+      payload:
+        $ref: '#/components/schemas/SpecialsFixturesResponse'
+
+    SettledFixturesDelta:
+      name: SettledFixturesDelta
+      title: Settled Fixtures Delta Response
+      contentType: application/json
+      payload:
+        $ref: '#/components/schemas/SettledFixturesResponse'
+
+    SettledSpecialFixturesDelta:
+      name: SettledSpecialFixturesDelta
+      title: Settled Special Fixtures Delta Response
+      contentType: application/json
+      payload:
+        $ref: '#/components/schemas/SettledSpecialFixturesResponse'
+
+    StraightOddsDelta:
+      name: StraightOddsDelta
+      title: Straight Odds Delta Response
+      summary: >-
+        Snapshot or delta of straight odds. When the request used a `since`
+        cursor, only periods that changed are present; unchanged periods are
+        omitted.
+      contentType: application/json
+      payload:
+        $ref: '#/components/schemas/OddsResponse'
+
+    SpecialOddsDelta:
+      name: SpecialOddsDelta
+      title: Special Odds Delta Response
+      contentType: application/json
+      payload:
+        $ref: '#/components/schemas/SpecialOddsResponse'
+
+  schemas:
+    Cursor:
+      type: integer
+      format: int64
+      description: >-
+        Pinnacle delta cursor. Returned as `last` on each response and
+        echoed back as the `since` query parameter on the next request to
+        receive only incremental changes.
+
+    FixturesResponse:
+      type: object
+      properties:
+        sportId:
+          type: integer
+          format: int32
+        last:
+          $ref: '#/components/schemas/Cursor'
+        league:
+          type: array
+          description: List of leagues with their fixtures.
+          items:
+            type: object
+            additionalProperties: true
+
+    SpecialsFixturesResponse:
+      type: object
+      properties:
+        sportId:
+          type: integer
+          format: int32
+        last:
+          $ref: '#/components/schemas/Cursor'
+        leagues:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+
+    SettledFixturesResponse:
+      type: object
+      properties:
+        sportId:
+          type: integer
+          format: int32
+        last:
+          $ref: '#/components/schemas/Cursor'
+        leagues:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+
+    SettledSpecialFixturesResponse:
+      type: object
+      properties:
+        sportId:
+          type: integer
+          format: int32
+        last:
+          $ref: '#/components/schemas/Cursor'
+        leagues:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+
+    OddsResponse:
+      type: object
+      properties:
+        sportId:
+          type: integer
+          format: int32
+        last:
+          $ref: '#/components/schemas/Cursor'
+        leagues:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+
+    SpecialOddsResponse:
+      type: object
+      properties:
+        sportId:
+          type: integer
+          format: int32
+        last:
+          $ref: '#/components/schemas/Cursor'
+        leagues:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
