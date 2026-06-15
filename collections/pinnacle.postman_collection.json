@@ -1,0 +1,1482 @@
+{
+  "item": [
+    {
+      "id": "d688aa34-8657-40bc-8097-ceb640292d1b",
+      "name": "Get Fixtures",
+      "request": {
+        "name": "Get Fixtures",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "fixtures"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "b6360054-ec41-4891-98f4-09cb5795374b",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "fixtures"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "e9b789ef-b119-4508-8a60-7869f28f77c5",
+      "name": "Get Special Fixtures",
+      "request": {
+        "name": "Get Special Fixtures",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "fixtures",
+            "special"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "51d872fe-49ec-412f-ac95-fa69efdf61a2",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "fixtures",
+                "special"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "68a573f4-5399-4385-86ff-7d8c4237b1c2",
+      "name": "Get Settled Fixtures",
+      "request": {
+        "name": "Get Settled Fixtures",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "fixtures",
+            "settled"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "2ec81f6f-afbc-49b5-b1d3-30bb6e1f6950",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "fixtures",
+                "settled"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "0a424d8d-cf6d-413d-9152-2594c87ade54",
+      "name": "Get Settled Special Fixtures",
+      "request": {
+        "name": "Get Settled Special Fixtures",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "fixtures",
+            "special",
+            "settled"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "89565bcf-2659-4989-9ffe-b40cebfb5c9a",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "fixtures",
+                "special",
+                "settled"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "88cf427d-bf98-4d4a-be7c-595d94d604cf",
+      "name": "Get Straight Odds",
+      "request": {
+        "name": "Get Straight Odds",
+        "description": {},
+        "url": {
+          "path": [
+            "v2",
+            "odds"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "5b66c28e-81ea-40dc-9292-4483867541a0",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v2",
+                "odds"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "23d3a0c2-e497-4723-832a-b5e1696bfd82",
+      "name": "Get Teaser Odds",
+      "request": {
+        "name": "Get Teaser Odds",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "odds",
+            "teaser"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "95abb306-59af-47dc-9d03-f4af62e4991b",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "odds",
+                "teaser"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "dd7a0861-ee37-42da-a507-4a3b7d0c51c5",
+      "name": "Get Special Odds",
+      "request": {
+        "name": "Get Special Odds",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "odds",
+            "special"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "8186492c-b002-4e22-8c6a-b6bfafdd42bf",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "odds",
+                "special"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "7299081a-1540-42c4-8a5b-dc880203fa20",
+      "name": "Get Straight Line",
+      "request": {
+        "name": "Get Straight Line",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "line"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "e96122c8-6942-4e4c-8bff-bb3f07e5a55e",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "line"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "5d31df44-ecd1-46e4-a785-4e1a4cd5fabb",
+      "name": "Get Parlay Line",
+      "request": {
+        "name": "Get Parlay Line",
+        "description": {},
+        "url": {
+          "path": [
+            "v2",
+            "line",
+            "parlay"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"key_0\": \"string\",\n  \"key_1\": 7851,\n  \"key_2\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "id": "57d3c646-285f-4c32-9741-101aab883c99",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v2",
+                "line",
+                "parlay"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "05b75d2d-c5ab-481a-909d-e9f67d14fe23",
+      "name": "Get Teaser Line",
+      "request": {
+        "name": "Get Teaser Line",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "line",
+            "teaser"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"key_0\": \"string\",\n  \"key_1\": 7851,\n  \"key_2\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "id": "280052f6-d053-4725-b799-f1ccdfd4cefd",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "line",
+                "teaser"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "567e899f-11da-41a5-a390-17a1c3fd0774",
+      "name": "Get Special Line",
+      "request": {
+        "name": "Get Special Line",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "line",
+            "special"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "82f0d3ac-6735-45d4-bf87-7d6d3f2bffa8",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "line",
+                "special"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "bd882112-9e8a-4a18-87ff-673259ed0606",
+      "name": "Get Sports",
+      "request": {
+        "name": "Get Sports",
+        "description": {},
+        "url": {
+          "path": [
+            "v2",
+            "sports"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "e5d32294-808d-48d3-95c9-d44f9c59c80d",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v2",
+                "sports"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "9d590548-3098-4394-9113-8474b6c35abe",
+      "name": "Get Leagues",
+      "request": {
+        "name": "Get Leagues",
+        "description": {},
+        "url": {
+          "path": [
+            "v2",
+            "leagues"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "2e0301b9-d628-48c9-a94a-aa806104b52c",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v2",
+                "leagues"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "e18b3355-ea28-43c8-9bfd-4fed628ec4dd",
+      "name": "Get Periods",
+      "request": {
+        "name": "Get Periods",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "periods"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "7e5955e9-e664-48e7-83a0-02cc9481ea42",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "periods"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "5c6c7445-f6d8-447f-9295-da39e1479602",
+      "name": "Get In-Running",
+      "request": {
+        "name": "Get In-Running",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "inrunning"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "470bf827-d99b-4a56-aa00-dec0ddfb7495",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "inrunning"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "0f575342-012e-4e1a-92d9-2fb51b280692",
+      "name": "Get Teaser Groups",
+      "request": {
+        "name": "Get Teaser Groups",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "teaser",
+            "groups"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "64c014af-ce5d-4425-b047-747ae4e2dd43",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "teaser",
+                "groups"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "802d7ef4-c21b-49ea-8da6-0d0574f9d3b9",
+      "name": "Get Cancellation Reasons",
+      "request": {
+        "name": "Get Cancellation Reasons",
+        "description": {},
+        "url": {
+          "path": [
+            "v1",
+            "cancellationreasons"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "4c80c9be-a01c-4b59-a8f9-e02149a2b9d5",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v1",
+                "cancellationreasons"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "3e547865-600e-4644-ba75-a931c61abe84",
+      "name": "Get Currencies",
+      "request": {
+        "name": "Get Currencies",
+        "description": {},
+        "url": {
+          "path": [
+            "v2",
+            "currencies"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "29593ef8-9ca9-4077-98b0-1c26a39ab57a",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v2",
+                "currencies"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: basic",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Basic <credentials>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"key_0\": \"string\",\n  \"key_1\": 6924.891191913103,\n  \"key_2\": false\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.pinnacle.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "username",
+        "value": "{{basicAuthUsername}}"
+      },
+      {
+        "key": "password",
+        "value": "{{basicAuthPassword}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "2eb18106-c499-4725-99ca-67758614c3d1",
+    "name": "Pinnacle Lines API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Pinnacle Lines API exposes endpoints for retrieving fixtures, odds, lines, sports, leagues, periods, in-running events and reference data used to place bets through Pinnacle.",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pinnacle Lines API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Get Fixtures",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/fixtures"
+      },
+      "docs": "Get Fixtures"
+    },
+    {
+      "info": {
+        "name": "Get Special Fixtures",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/fixtures/special"
+      },
+      "docs": "Get Special Fixtures"
+    },
+    {
+      "info": {
+        "name": "Get Settled Fixtures",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/fixtures/settled"
+      },
+      "docs": "Get Settled Fixtures"
+    },
+    {
+      "info": {
+        "name": "Get Settled Special Fixtures",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/fixtures/special/settled"
+      },
+      "docs": "Get Settled Special Fixtures"
+    },
+    {
+      "info": {
+        "name": "Get Straight Odds",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v2/odds"
+      },
+      "docs": "Get Straight Odds"
+    },
+    {
+      "info": {
+        "name": "Get Teaser Odds",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/odds/teaser"
+      },
+      "docs": "Get Teaser Odds"
+    },
+    {
+      "info": {
+        "name": "Get Special Odds",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/odds/special"
+      },
+      "docs": "Get Special Odds"
+    },
+    {
+      "info": {
+        "name": "Get Straight Line",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/line"
+      },
+      "docs": "Get Straight Line"
+    },
+    {
+      "info": {
+        "name": "Get Parlay Line",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.pinnacle.com/v2/line/parlay",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Get Parlay Line"
+    },
+    {
+      "info": {
+        "name": "Get Teaser Line",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.pinnacle.com/v1/line/teaser",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Get Teaser Line"
+    },
+    {
+      "info": {
+        "name": "Get Special Line",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/line/special"
+      },
+      "docs": "Get Special Line"
+    },
+    {
+      "info": {
+        "name": "Get Sports",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v2/sports"
+      },
+      "docs": "Get Sports"
+    },
+    {
+      "info": {
+        "name": "Get Leagues",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v2/leagues"
+      },
+      "docs": "Get Leagues"
+    },
+    {
+      "info": {
+        "name": "Get Periods",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/periods"
+      },
+      "docs": "Get Periods"
+    },
+    {
+      "info": {
+        "name": "Get In-Running",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/inrunning"
+      },
+      "docs": "Get In-Running"
+    },
+    {
+      "info": {
+        "name": "Get Teaser Groups",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/teaser/groups"
+      },
+      "docs": "Get Teaser Groups"
+    },
+    {
+      "info": {
+        "name": "Get Cancellation Reasons",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v1/cancellationreasons"
+      },
+      "docs": "Get Cancellation Reasons"
+    },
+    {
+      "info": {
+        "name": "Get Currencies",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.pinnacle.com/v2/currencies"
+      },
+      "docs": "Get Currencies"
+    }
+  ],
+  "bundled": true
+}
