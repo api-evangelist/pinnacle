@@ -60,6 +60,10 @@ maintainers:
     email: kin@apievangelist.com
 specificationVersion: '0.19'
 common:
+  - type: DomainSecurity
+    url: security/pinnacle-domain-security.yml
+  - type: Authentication
+    url: authentication/pinnacle-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/pinnacle-sports
   - name: GitHub Organization
