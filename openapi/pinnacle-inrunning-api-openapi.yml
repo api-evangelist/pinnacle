@@ -1,0 +1,36 @@
+openapi: 3.1.0
+info:
+  title: Pinnacle Lines Cancellationreasons Inrunning API
+  version: v1
+  description: Pinnacle Lines API exposes endpoints for retrieving fixtures, odds, lines, sports, leagues, periods, in-running events and reference data used to place bets through Pinnacle.
+  x-generated-from: https://github.com/pinnacleapi/pinnacleapi-documentation
+  x-generated-by: claude-crawl-2026-05-08
+servers:
+- url: https://api.pinnacle.com
+security:
+- basicAuth: []
+tags:
+- name: Inrunning
+paths:
+  /v1/inrunning:
+    get:
+      summary: Get In-Running
+      operationId: getInRunning
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericResponse'
+      tags:
+      - Inrunning
+components:
+  schemas:
+    GenericResponse:
+      type: object
+      additionalProperties: true
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic

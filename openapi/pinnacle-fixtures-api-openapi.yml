@@ -1,0 +1,75 @@
+openapi: 3.1.0
+info:
+  title: Pinnacle Lines Cancellationreasons Fixtures API
+  version: v1
+  description: Pinnacle Lines API exposes endpoints for retrieving fixtures, odds, lines, sports, leagues, periods, in-running events and reference data used to place bets through Pinnacle.
+  x-generated-from: https://github.com/pinnacleapi/pinnacleapi-documentation
+  x-generated-by: claude-crawl-2026-05-08
+servers:
+- url: https://api.pinnacle.com
+security:
+- basicAuth: []
+tags:
+- name: Fixtures
+paths:
+  /v1/fixtures:
+    get:
+      summary: Get Fixtures
+      operationId: getFixtures
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericResponse'
+      tags:
+      - Fixtures
+  /v1/fixtures/special:
+    get:
+      summary: Get Special Fixtures
+      operationId: getSpecialFixtures
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericResponse'
+      tags:
+      - Fixtures
+  /v1/fixtures/settled:
+    get:
+      summary: Get Settled Fixtures
+      operationId: getSettledFixtures
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericResponse'
+      tags:
+      - Fixtures
+  /v1/fixtures/special/settled:
+    get:
+      summary: Get Settled Special Fixtures
+      operationId: getSettledSpecialFixtures
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericResponse'
+      tags:
+      - Fixtures
+components:
+  schemas:
+    GenericResponse:
+      type: object
+      additionalProperties: true
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic

@@ -1,0 +1,90 @@
+openapi: 3.1.0
+info:
+  title: Pinnacle Lines Cancellationreasons Line API
+  version: v1
+  description: Pinnacle Lines API exposes endpoints for retrieving fixtures, odds, lines, sports, leagues, periods, in-running events and reference data used to place bets through Pinnacle.
+  x-generated-from: https://github.com/pinnacleapi/pinnacleapi-documentation
+  x-generated-by: claude-crawl-2026-05-08
+servers:
+- url: https://api.pinnacle.com
+security:
+- basicAuth: []
+tags:
+- name: Line
+paths:
+  /v1/line:
+    get:
+      summary: Get Straight Line
+      operationId: getStraightLine
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericResponse'
+      tags:
+      - Line
+  /v2/line/parlay:
+    post:
+      summary: Get Parlay Line
+      operationId: getParlayLine
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GenericRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericResponse'
+      tags:
+      - Line
+  /v1/line/teaser:
+    post:
+      summary: Get Teaser Line
+      operationId: getTeaserLine
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GenericRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericResponse'
+      tags:
+      - Line
+  /v1/line/special:
+    get:
+      summary: Get Special Line
+      operationId: getSpecialLine
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericResponse'
+      tags:
+      - Line
+components:
+  schemas:
+    GenericRequest:
+      type: object
+      additionalProperties: true
+    GenericResponse:
+      type: object
+      additionalProperties: true
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
