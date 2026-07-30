@@ -1,53 +1,162 @@
 aid: pinnacle-sports-betting
 url: https://raw.githubusercontent.com/api-search/pinnacle/refs/heads/main/apis.yml
 apis:
-  - aid: pinnacle:pinnacle-customer-api
-    name: Pinnacle Customer API
-    tags:
-      - Customers
-      - Gambling
-      - Sports Betting
-    humanURL: https://www.pinnacle.com/en/API/
-    properties:
-      - url: openapi/pinnacle-openapi.yml
-        type: OpenAPI
-      - url: https://pinnacleapi.github.io/
-        type: Documentation
-    description: >-
-      Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a
-      medium-sized, fully licensed, online sportsbook.
-  - aid: pinnacle:pinnacle-bets-api
-    name: Pinnacle Bets API
-    tags:
-      - Gambling
-      - Sports Betting
-    humanURL: https://www.pinnacle.com/en/API/
-    properties:
-      - url: https://pinnacleapi.github.io/
-        type: Documentation
-    description: >-
-      Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a
-      medium-sized, fully licensed, online sportsbook.
-  - aid: pinnacle:pinnacle-lines-api
-    name: Pinnacle Lines API
-    tags:
-      - Gambling
-      - Sports Betting
-    humanURL: https://www.pinnacle.com/en/API/
-    properties:
-      - url: https://pinnacleapi.github.io/
-        type: Documentation
-      - url: openapi/pinnacle-asyncapi.yml
-        type: AsyncAPI
-    description: >-
-      Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a
-      medium-sized, fully licensed, online sportsbook.
+- aid: pinnacle:pinnacle-bets-api
+  name: Pinnacle Bets API
+  tags:
+  - Gambling
+  - Sports Betting
+  humanURL: https://www.pinnacle.com/en/API/
+  properties:
+  - url: https://pinnacleapi.github.io/
+    type: Documentation
+  description: >-
+    Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become
+    a medium-sized, fully licensed, online sportsbook.
+- aid: pinnacle:pinnacle-lines-api
+  name: Pinnacle Lines API
+  tags:
+  - Gambling
+  - Sports Betting
+  humanURL: https://www.pinnacle.com/en/API/
+  properties:
+  - url: https://pinnacleapi.github.io/
+    type: Documentation
+  - url: openapi/pinnacle-asyncapi.yml
+    type: AsyncAPI
+  description: >-
+    Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become
+    a medium-sized, fully licensed, online sportsbook.
+- aid: pinnacle:pinnacle-cancellationreasons-api
+  name: ' Pinnacle Sports Betting Cancellationreasons API'
+  description: >-
+    The Cancellationreasons API from  Pinnacle Sports Betting — 1 operation(s) for cancellationreasons.
+  humanURL: https://www.pinnacle.com/en/API/
+  tags:
+  - Cancellationreasons
+  properties:
+  - type: OpenAPI
+    url: openapi/pinnacle-cancellationreasons-api-openapi.yml
+  - type: Documentation
+    url: https://pinnacleapi.github.io/
+- aid: pinnacle:pinnacle-currencies-api
+  name: ' Pinnacle Sports Betting Currencies API'
+  description: The Currencies API from  Pinnacle Sports Betting — 1 operation(s) for currencies.
+  humanURL: https://www.pinnacle.com/en/API/
+  tags:
+  - Currencies
+  properties:
+  - type: OpenAPI
+    url: openapi/pinnacle-currencies-api-openapi.yml
+  - type: Documentation
+    url: https://pinnacleapi.github.io/
+- aid: pinnacle:pinnacle-fixtures-api
+  name: ' Pinnacle Sports Betting Fixtures API'
+  description: The Fixtures API from  Pinnacle Sports Betting — 4 operation(s) for fixtures.
+  humanURL: https://www.pinnacle.com/en/API/
+  tags:
+  - Fixtures
+  properties:
+  - type: OpenAPI
+    url: openapi/pinnacle-fixtures-api-openapi.yml
+  - type: Documentation
+    url: https://pinnacleapi.github.io/
+- aid: pinnacle:pinnacle-inrunning-api
+  name: ' Pinnacle Sports Betting Inrunning API'
+  description: The Inrunning API from  Pinnacle Sports Betting — 1 operation(s) for inrunning.
+  humanURL: https://www.pinnacle.com/en/API/
+  tags:
+  - Inrunning
+  properties:
+  - type: OpenAPI
+    url: openapi/pinnacle-inrunning-api-openapi.yml
+  - type: Documentation
+    url: https://pinnacleapi.github.io/
+- aid: pinnacle:pinnacle-leagues-api
+  name: ' Pinnacle Sports Betting Leagues API'
+  description: The Leagues API from  Pinnacle Sports Betting — 1 operation(s) for leagues.
+  humanURL: https://www.pinnacle.com/en/API/
+  tags:
+  - Leagues
+  properties:
+  - type: OpenAPI
+    url: openapi/pinnacle-leagues-api-openapi.yml
+  - type: Documentation
+    url: https://pinnacleapi.github.io/
+- aid: pinnacle:pinnacle-line-api
+  name: ' Pinnacle Sports Betting Line API'
+  description: The Line API from  Pinnacle Sports Betting — 4 operation(s) for line.
+  humanURL: https://www.pinnacle.com/en/API/
+  tags:
+  - Line
+  properties:
+  - type: OpenAPI
+    url: openapi/pinnacle-line-api-openapi.yml
+  - type: Documentation
+    url: https://pinnacleapi.github.io/
+- aid: pinnacle:pinnacle-odds-api
+  name: ' Pinnacle Sports Betting Odds API'
+  description: The Odds API from  Pinnacle Sports Betting — 3 operation(s) for odds.
+  humanURL: https://www.pinnacle.com/en/API/
+  tags:
+  - Odds
+  properties:
+  - type: OpenAPI
+    url: openapi/pinnacle-odds-api-openapi.yml
+  - type: Documentation
+    url: https://pinnacleapi.github.io/
+- aid: pinnacle:pinnacle-periods-api
+  name: ' Pinnacle Sports Betting Periods API'
+  description: The Periods API from  Pinnacle Sports Betting — 1 operation(s) for periods.
+  humanURL: https://www.pinnacle.com/en/API/
+  tags:
+  - Periods
+  properties:
+  - type: OpenAPI
+    url: openapi/pinnacle-periods-api-openapi.yml
+  - type: Documentation
+    url: https://pinnacleapi.github.io/
+- aid: pinnacle:pinnacle-sports-api
+  name: ' Pinnacle Sports Betting Sports API'
+  description: The Sports API from  Pinnacle Sports Betting — 1 operation(s) for sports.
+  humanURL: https://www.pinnacle.com/en/API/
+  tags:
+  - Sports
+  properties:
+  - type: OpenAPI
+    url: openapi/pinnacle-sports-api-openapi.yml
+  - type: Documentation
+    url: https://pinnacleapi.github.io/
+- aid: pinnacle:pinnacle-teaser-api
+  name: ' Pinnacle Sports Betting Teaser API'
+  description: The Teaser API from  Pinnacle Sports Betting — 1 operation(s) for teaser.
+  humanURL: https://www.pinnacle.com/en/API/
+  tags:
+  - Teaser
+  properties:
+  - type: OpenAPI
+    url: openapi/pinnacle-teaser-api-openapi.yml
+  - type: Documentation
+    url: https://pinnacleapi.github.io/
 name: ' Pinnacle Sports Betting'
 tags:
   - Gambling
   - Sports Betting
 kind: contract
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pinnacle.png
 access: 3rd-Party
 created: '2024-11-07T00:00:00.000Z'
 modified: '2026-05-30'
