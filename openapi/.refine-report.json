@@ -1,0 +1,32 @@
+{
+  "provider": "pinnacle",
+  "sources": [
+    "pinnacle-cancellationreasons-api-openapi.yml",
+    "pinnacle-currencies-api-openapi.yml",
+    "pinnacle-fixtures-api-openapi.yml",
+    "pinnacle-inrunning-api-openapi.yml",
+    "pinnacle-leagues-api-openapi.yml",
+    "pinnacle-line-api-openapi.yml",
+    "pinnacle-odds-api-openapi.yml",
+    "pinnacle-periods-api-openapi.yml",
+    "pinnacle-sports-api-openapi.yml",
+    "pinnacle-teaser-api-openapi.yml"
+  ],
+  "outputs": [
+    "pinnacle-cancellationreasons-api-openapi.yml",
+    "pinnacle-currencies-api-openapi.yml",
+    "pinnacle-fixtures-api-openapi.yml",
+    "pinnacle-inrunning-api-openapi.yml",
+    "pinnacle-leagues-api-openapi.yml",
+    "pinnacle-line-api-openapi.yml",
+    "pinnacle-odds-api-openapi.yml",
+    "pinnacle-periods-api-openapi.yml",
+    "pinnacle-sports-api-openapi.yml",
+    "pinnacle-teaser-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
