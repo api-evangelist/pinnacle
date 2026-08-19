@@ -1,0 +1,69 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pinnacle Lines Cancellationreasons Fixtures API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Fixtures",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Fixtures",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v1/fixtures"
+          },
+          "docs": "Get Fixtures"
+        },
+        {
+          "info": {
+            "name": "Get Special Fixtures",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v1/fixtures/special"
+          },
+          "docs": "Get Special Fixtures"
+        },
+        {
+          "info": {
+            "name": "Get Settled Fixtures",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v1/fixtures/settled"
+          },
+          "docs": "Get Settled Fixtures"
+        },
+        {
+          "info": {
+            "name": "Get Settled Special Fixtures",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v1/fixtures/special/settled"
+          },
+          "docs": "Get Settled Special Fixtures"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

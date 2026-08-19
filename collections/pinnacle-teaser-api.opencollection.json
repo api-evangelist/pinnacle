@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pinnacle Lines Cancellationreasons Teaser API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Teaser",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Teaser Groups",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v1/teaser/groups"
+          },
+          "docs": "Get Teaser Groups"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

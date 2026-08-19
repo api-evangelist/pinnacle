@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pinnacle Lines Cancellationreasons Periods API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Periods",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Periods",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v1/periods"
+          },
+          "docs": "Get Periods"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

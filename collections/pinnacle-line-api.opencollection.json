@@ -1,0 +1,77 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pinnacle Lines Cancellationreasons Line API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Line",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Straight Line",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v1/line"
+          },
+          "docs": "Get Straight Line"
+        },
+        {
+          "info": {
+            "name": "Get Parlay Line",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.pinnacle.com/v2/line/parlay",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Get Parlay Line"
+        },
+        {
+          "info": {
+            "name": "Get Teaser Line",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.pinnacle.com/v1/line/teaser",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Get Teaser Line"
+        },
+        {
+          "info": {
+            "name": "Get Special Line",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v1/line/special"
+          },
+          "docs": "Get Special Line"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

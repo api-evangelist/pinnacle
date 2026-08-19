@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pinnacle Lines Cancellationreasons Inrunning API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Inrunning",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get In-Running",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v1/inrunning"
+          },
+          "docs": "Get In-Running"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

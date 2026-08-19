@@ -1,0 +1,58 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pinnacle Lines Cancellationreasons Odds API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Odds",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Straight Odds",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v2/odds"
+          },
+          "docs": "Get Straight Odds"
+        },
+        {
+          "info": {
+            "name": "Get Teaser Odds",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v1/odds/teaser"
+          },
+          "docs": "Get Teaser Odds"
+        },
+        {
+          "info": {
+            "name": "Get Special Odds",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pinnacle.com/v1/odds/special"
+          },
+          "docs": "Get Special Odds"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
