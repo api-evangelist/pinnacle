@@ -44,6 +44,8 @@ apis:
   description: The Currencies API from  Pinnacle Sports Betting — 1 operation(s) for currencies.
   humanURL: https://www.pinnacle.com/en/API/
   tags:
+  - Currency
+  tags_raw:
   - Currencies
   properties:
   - type: OpenAPI
