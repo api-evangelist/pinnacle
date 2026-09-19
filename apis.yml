@@ -76,6 +76,8 @@ apis:
   description: The Leagues API from  Pinnacle Sports Betting — 1 operation(s) for leagues.
   humanURL: https://www.pinnacle.com/en/API/
   tags:
+  - League
+  tags_raw:
   - Leagues
   properties:
   - type: OpenAPI
