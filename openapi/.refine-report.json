@@ -1,16 +1,7 @@
 {
   "provider": "pinnacle",
   "sources": [
-    "pinnacle-cancellationreasons-api-openapi.yml",
-    "pinnacle-currencies-api-openapi.yml",
-    "pinnacle-fixtures-api-openapi.yml",
-    "pinnacle-inrunning-api-openapi.yml",
-    "pinnacle-leagues-api-openapi.yml",
-    "pinnacle-line-api-openapi.yml",
-    "pinnacle-odds-api-openapi.yml",
-    "pinnacle-periods-api-openapi.yml",
-    "pinnacle-sports-api-openapi.yml",
-    "pinnacle-teaser-api-openapi.yml"
+    "_ae-authored/pinnacle-openapi.yml"
   ],
   "outputs": [
     "pinnacle-cancellationreasons-api-openapi.yml",
@@ -27,6 +18,49 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "pinnacle-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "pinnacle-openapi.yml: tagged paths GET /v1/fixtures -> Fixtures",
+    "pinnacle-openapi.yml: tagged paths GET /v1/fixtures/special -> Fixtures",
+    "pinnacle-openapi.yml: tagged paths GET /v1/fixtures/settled -> Fixtures",
+    "pinnacle-openapi.yml: tagged paths GET /v1/fixtures/special/settled -> Fixtures",
+    "pinnacle-openapi.yml: tagged paths GET /v2/odds -> Odds",
+    "pinnacle-openapi.yml: tagged paths GET /v1/odds/teaser -> Odds",
+    "pinnacle-openapi.yml: tagged paths GET /v1/odds/special -> Odds",
+    "pinnacle-openapi.yml: tagged paths GET /v1/line -> Line",
+    "pinnacle-openapi.yml: tagged paths POST /v2/line/parlay -> Line",
+    "pinnacle-openapi.yml: tagged paths POST /v1/line/teaser -> Line",
+    "pinnacle-openapi.yml: tagged paths GET /v1/line/special -> Line",
+    "pinnacle-openapi.yml: tagged paths GET /v2/sports -> Sports",
+    "pinnacle-openapi.yml: tagged paths GET /v2/leagues -> Leagues",
+    "pinnacle-openapi.yml: tagged paths GET /v1/periods -> Periods",
+    "pinnacle-openapi.yml: tagged paths GET /v1/inrunning -> Inrunning",
+    "pinnacle-openapi.yml: tagged paths GET /v1/teaser/groups -> Teaser",
+    "pinnacle-openapi.yml: tagged paths GET /v1/cancellationreasons -> Cancellationreasons",
+    "pinnacle-openapi.yml: tagged paths GET /v2/currencies -> Currencies",
+    "pinnacle-openapi.yml: declared missing tag: Cancellationreasons",
+    "pinnacle-openapi.yml: declared missing tag: Currencies",
+    "pinnacle-openapi.yml: declared missing tag: Fixtures",
+    "pinnacle-openapi.yml: declared missing tag: Inrunning",
+    "pinnacle-openapi.yml: declared missing tag: Leagues",
+    "pinnacle-openapi.yml: declared missing tag: Line",
+    "pinnacle-openapi.yml: declared missing tag: Odds",
+    "pinnacle-openapi.yml: declared missing tag: Periods",
+    "pinnacle-openapi.yml: declared missing tag: Sports",
+    "pinnacle-openapi.yml: declared missing tag: Teaser",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "pinnacle-cancellationreasons-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pinnacle-currencies-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pinnacle-fixtures-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pinnacle-inrunning-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pinnacle-leagues-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pinnacle-line-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pinnacle-odds-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pinnacle-periods-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pinnacle-sports-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pinnacle-teaser-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
