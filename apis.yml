@@ -181,6 +181,12 @@ maintainers:
   email: kin@apievangelist.com
 specificationVersion: '0.23'
 common:
+- type: Plans
+  url: plans/pinnacle-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/pinnacle-rate-limits.yml
+- type: FinOps
+  url: finops/pinnacle-finops.yml
 - type: Website
   url: https://pinnacle.com
 - type: AgenticAccess
