@@ -1,4 +1,4 @@
-#  Pinnacle Sports Betting (pinnacle-sports-betting)
+#  Pinnacle Sports Betting
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,85 +66,137 @@
 
 Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a medium-sized, fully licensed, online sportsbook.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-search/pinnacle/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-search/pinnacle/refs/heads/main/apis.yml)
+**Areas:** Gambling · Sports Betting
 
-## Scope
+##  Pinnacle Sports Betting on APIs.io
 
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for  Pinnacle Sports Betting is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pinnacle/](https://apis.io/providers/pinnacle/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (12)
 
-- Gambling
-- Sports Betting
+- [Pinnacle Bets API](https://apis.io/apis/pinnacle/pinnacle-bets-api/) — Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a medium-sized, fully licensed, online sportsbook.
+- [Pinnacle Lines API](https://apis.io/apis/pinnacle/pinnacle-lines-api/) — Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a medium-sized, fully licensed, online sportsbook.
+- [ Pinnacle Sports Betting Cancellationreasons API](https://apis.io/apis/pinnacle/pinnacle-cancellationreasons-api/) — The Cancellationreasons API from Pinnacle Sports Betting — 1 operation(s) for cancellationreasons.
+- [ Pinnacle Sports Betting Currencies API](https://apis.io/apis/pinnacle/pinnacle-currencies-api/) — The Currencies API from Pinnacle Sports Betting — 1 operation(s) for currencies.
+- [ Pinnacle Sports Betting Fixtures API](https://apis.io/apis/pinnacle/pinnacle-fixtures-api/) — The Fixtures API from Pinnacle Sports Betting — 4 operation(s) for fixtures.
+- [ Pinnacle Sports Betting Inrunning API](https://apis.io/apis/pinnacle/pinnacle-inrunning-api/) — The Inrunning API from Pinnacle Sports Betting — 1 operation(s) for inrunning.
+- [ Pinnacle Sports Betting Leagues API](https://apis.io/apis/pinnacle/pinnacle-leagues-api/) — The Leagues API from Pinnacle Sports Betting — 1 operation(s) for leagues.
+- [ Pinnacle Sports Betting Line API](https://apis.io/apis/pinnacle/pinnacle-line-api/) — The Line API from Pinnacle Sports Betting — 4 operation(s) for line.
+- [ Pinnacle Sports Betting Odds API](https://apis.io/apis/pinnacle/pinnacle-odds-api/) — The Odds API from Pinnacle Sports Betting — 3 operation(s) for odds.
+- [ Pinnacle Sports Betting Periods API](https://apis.io/apis/pinnacle/pinnacle-periods-api/) — The Periods API from Pinnacle Sports Betting — 1 operation(s) for periods.
+- [ Pinnacle Sports Betting Sports API](https://apis.io/apis/pinnacle/pinnacle-sports-api/) — The Sports API from Pinnacle Sports Betting — 1 operation(s) for sports.
+- [ Pinnacle Sports Betting Teaser API](https://apis.io/apis/pinnacle/pinnacle-teaser-api/) — The Teaser API from Pinnacle Sports Betting — 1 operation(s) for teaser.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-11-07T00:00:00.000Z
-- **Modified:** 2026-05-30
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Pinnacle Customer API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a medium-sized, fully licensed, online sportsbook.
+- [Pinnacle Agentic Access](https://apis.io/agentic-access/pinnacle/pinnacle-agentic-access/)
 
-- **Human URL:** [https://www.pinnacle.com/en/API/](https://www.pinnacle.com/en/API/)
+#### Collections (12)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Customers
-- Gambling
-- Sports Betting
+- [Pinnacle Lines API](https://apis.io/collections/pinnacle/open-pinnacle/)
+- [Pinnacle Lines API - Long-Poll Surface](https://apis.io/collections/pinnacle/open-pinnacle-asyncapi/)
+- [Pinnacle Lines Cancellationreasons API](https://apis.io/collections/pinnacle/open-pinnacle-cancellationreasons-api/)
+- [Pinnacle Lines Cancellationreasons Currencies API](https://apis.io/collections/pinnacle/open-pinnacle-currencies-api/)
+- [Pinnacle Lines Cancellationreasons Fixtures API](https://apis.io/collections/pinnacle/open-pinnacle-fixtures-api/)
+- [Pinnacle Lines Cancellationreasons Inrunning API](https://apis.io/collections/pinnacle/open-pinnacle-inrunning-api/)
+- [Pinnacle Lines Cancellationreasons Leagues API](https://apis.io/collections/pinnacle/open-pinnacle-leagues-api/)
+- [Pinnacle Lines Cancellationreasons Line API](https://apis.io/collections/pinnacle/open-pinnacle-line-api/)
+- [Pinnacle Lines Cancellationreasons Odds API](https://apis.io/collections/pinnacle/open-pinnacle-odds-api/)
+- [Pinnacle Lines Cancellationreasons Periods API](https://apis.io/collections/pinnacle/open-pinnacle-periods-api/)
+- [Pinnacle Lines Cancellationreasons Sports API](https://apis.io/collections/pinnacle/open-pinnacle-sports-api/)
+- [Pinnacle Lines Cancellationreasons Teaser API](https://apis.io/collections/pinnacle/open-pinnacle-teaser-api/)
 
-#### Properties
+#### Security (2)
 
-- [OpenAPI](openapi/pinnacle-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/pinnacle.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/pinnacle.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://pinnacleapi.github.io/)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Pinnacle Bets API
+- [Pinnacle Authentication](https://apis.io/security/pinnacle/pinnacle-authentication/)
+- [Pinnacle Domain Security](https://apis.io/security/pinnacle/pinnacle-domain-security/)
 
-Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a medium-sized, fully licensed, online sportsbook.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://www.pinnacle.com/en/API/](https://www.pinnacle.com/en/API/)
+Published plans, tiers and prices.
 
-#### Tags
+- [Pinnacle Plans Pricing](https://apis.io/plans/pinnacle/pinnacle-plans-pricing/)
 
-- Gambling
-- Sports Betting
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://pinnacleapi.github.io/)
-- [Postman Collection](collections/pinnacle.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/pinnacle.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Pinnacle Rate Limits](https://apis.io/rate-limits/pinnacle/pinnacle-rate-limits/)
 
-### Pinnacle Lines API
+#### FinOps (1)
 
-Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a medium-sized, fully licensed, online sportsbook.
+What the API costs to run, by operation.
 
-- **Human URL:** [https://www.pinnacle.com/en/API/](https://www.pinnacle.com/en/API/)
+- [Pinnacle Finops](https://apis.io/finops/pinnacle/pinnacle-finops/)
 
-#### Tags
+## Where to find this API
 
-- Gambling
-- Sports Betting
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-#### Properties
+- [Website](https://pinnacle.com)
+- [GitHub](https://github.com/pinnacleapi)
 
-- [Documentation](https://pinnacleapi.github.io/)
-- [AsyncAPI](openapi/pinnacle-asyncapi.yml) — [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/latest)
-- [Postman Collection](collections/pinnacle.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/pinnacle.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+## API Evangelist rating
 
-## Common Properties
+**Kin Score 23.7** — emerging · rubric 0.25.0 · scored 2026-10-23
 
-- [LinkedIn](https://www.linkedin.com/company/pinnacle-sports)
-- [GitHub Organization](https://github.com/pinnacleapi)
+| Facet | Score |
+|---|---|
+| Discoverability | 44.6 |
+| Contract quality | 51.6 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 7.9 |
 
-## Maintainers
+**Agent readiness 25.1** — agent-aware
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | unknown |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pinnacle/](https://apis.io/providers/pinnacle/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for  Pinnacle Sports Betting: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pinnacle/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
