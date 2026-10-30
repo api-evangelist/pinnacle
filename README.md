@@ -64,7 +64,7 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a medium-sized, fully licensed, online sportsbook.
+Pinnacle closed its API suite to the general public on July 23, 2025; access is now by application only, and these API descriptions are kept for reference. Pinnacle is an online gaming website that was founded in 1998. Since its inception, Pinnacle has become a medium-sized, fully licensed, online sportsbook.
 
 **Areas:** Gambling · Sports Betting
 
